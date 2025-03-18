@@ -10,7 +10,7 @@ async function main() {
     const tokenAddress = "0x9511FF4d178620C572576CaF48E4e06Ff7a14428";
 
     const bridge = await Bridge.deploy(tokenAddress);
-    await bridge.waitForDeployment();  // ✅ Use `deployed()` instead of `waitForDeployment()`
+    await bridge.waitForDeployment();  
 
     console.log("Bridge Contract deployed at:", await bridge.getAddress());
 }
